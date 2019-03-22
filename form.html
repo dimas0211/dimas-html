@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fill up a little survey :)</strong>
+        </h1>
+        <nav>
+            <a href="index.html">Main</a>
+            <a href="galery.html">My Galery</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3>What do you think?</h3>
+        <form method="POST" action="https://formspree.io/supermegacheaterpro@gmail.com">
+            <ol>
+                <li>
+                    <label>
+                       Name: <input id="client-name" type="text" placeholder="Name" name="client-name" required>
+                    </label>               
+                </li>
+                <li>
+                    <label>
+                        Email: <input type="email" placeholder="Email" name="client-email" required>
+                    </label>
+                </li>
+                <li>
+                    <label>Gender</label>
+                    <label>
+                        <input type="radio" name="gender"required>Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender">Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender">Other
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Date of your birth: <br>
+                        <em>formatted by dd/mm/yyyy</em><input type="date" required>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        What`s your favourite type of music? 
+                        <select name="fav-music" required>
+                            <option value="hiphop">Hip-Hop</option>
+                            <option value="rap">Rap</option>
+                            <option value="classical">Classic</option>
+                            <option value="rock">Rock</option>
+                            <option value="techno">Techno</option>
+                            <option value="pop">Pop</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Did you like my videos?</legend>
+                        <label>
+                            <input type="radio" name="like-or-not" value="Y" required>Kickass
+                        </label>
+                        <label>
+                            <input type="radio" name="like-or-not" value="N">My grandma plays better :p
+                        </label>
+                    </fieldset>
+                </li>
+                <li>
+                    <label>What video did you like the most?</label><br>
+                    <label>
+                        <input type="radio" name="best-video" value="first-vid" required> Video N1<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="best-video" value="second-vid"> Video N2<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="best-video" value="third-vid"> Video N3<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="best-video" value="fourth-vid"> Video N4<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="best-video" value="fifth-vid"> Video N5<br>
+                    </label>
+                </li>
+                <li>
+                    <spam>Please, write a name of song you would like to see me playing or making a cover of it! Write it DOWN HERE! :)</spam>
+                    <br>
+                    <label>
+                       Write a message:<textarea rows="4" cols="50" name="your-text" placeholder="Write a message" required></textarea>    
+                    </label>
+                </li>
+            </ol>
+            <p><button type="submit">Finish and send</button></p>
+        </form>
+    </main>
+    <footer>
+        <p>Created by <strong>Rock`nRoller</strong></p>
+    </footer>
+</body>
+
+</html>
